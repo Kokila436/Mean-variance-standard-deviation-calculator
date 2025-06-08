@@ -48,5 +48,35 @@ def calculate(input_list):
         'min': [min_axis1, min_axis2, min_flattened],
         'sum': [sum_axis1, sum_axis2, sum_flattened]
     }
-print(calculate([0, 1, 2, 3, 4, 5, 6, 7, 8]))
 
+result = calculate([0, 1, 2, 3, 4, 5, 6, 7, 8])
+
+print("Mean:")
+print("  Columns:", result['mean'][0])
+print("  Rows:", result['mean'][1])
+print("  Overall:", result['mean'][2])
+
+print("\nVariance:")
+print("  Columns:", result['variance'][0])
+print("  Rows:", result['variance'][1])
+print("  Overall:", result['variance'][2])
+
+print("\nStandard Deviation:")
+print("  Columns:", result['standard deviation'][0])
+print("  Rows:", result['standard deviation'][1])
+print("  Overall:", result['standard deviation'][2])
+
+print("\nMax:")
+print("  Columns:", result['max'][0])
+print("  Rows:", result['max'][1])
+print("  Overall:", result['max'][2])
+
+print("\nMin:")
+print("  Columns:", result['min'][0])
+print("  Rows:", result['min'][1])
+print("  Overall:", result['min'][2])
+
+print("\nSum:")
+print("  Columns:", result['sum'][0])
+print("  Rows:", result['sum'][1])
+print("  Overall:", result['sum'][2])
